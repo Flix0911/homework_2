@@ -48,8 +48,52 @@ for (let q = 1; q <101; q++)
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
+//Use the above array (name, specias, age, hometown): You should be modifying the elements by accessing them
 
+//1. Plantee just had her birthdayl change Plantee's array to reflect her being a year older
+//singled out plantee's age. index 2
+//console.log(plantee[2])
+
+//I feel like this is not what you're looking for. I looked up the method and splice seemed to be the easier.
+//I spliced the 2nd index, 1 item, and 5001 is my deired result and then console.log(plantee[2])
+plantee.splice(2, 1, 5001);
+console.log(plantee[2])
+//confirm changes below
+console.log(plantee)
+
+//2.Change Wolfy's hometown from "Yukon Territory" to "Gotham City"
+//Going to tackle this the same as above
+//single out wolfy's hometown, index 3
+//console.log(wolfy[3])
+
+wolfy.splice(3, 1, "Gotham City");
+console.log(wolfy[3])
+//confirm changes below
+console.log(wolfy)
+
+//3. Give D'Art a second hometown by adding Hawkins
+//Again, tackling with the same method
+//single out dart by the below
+//console.log(dart[3])
+
+dart.splice(4, 0, "Hawkins")
+console.log(dart[3])
+//confirm changes below
+console.log(dart)
+
+//4. Porgee decides that Wolfy can't be named Wolfy anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy"
+//single out wolfy's name wolfy
+//console.log(wolfy[0])
+wolfy.splice(0, 1, "Gameboy")
+console.log(wolfy[0])
+//confirm changed below to the wolfy array
+console.log(wolfy)
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
