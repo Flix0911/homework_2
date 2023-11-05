@@ -1,6 +1,10 @@
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
+//Write a loop that will log numbers 1 through 20 ~ meaning this should show 1-20. 
+//i needs to begin at 1 and should stop a 20, meaning it must be less than 21 to log those numbers
+//want to add 1 incrementally
+
 for (let i = 1; i < 21; i++) {
     console.log(i);
 }
