@@ -98,7 +98,25 @@ console.log(wolfy)
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
+//1. Create an array with the members of the ninja turtles
+const arr = ["donatello", "leonardo", "raphael", "michaelangelo"]
+let updatedArr = []
 
+//2. use a `for of loop` to call toUpperCase() on each of them and pring out the result
+//I don't believe the below is the ideal, feels like there is another way I should of tackled this.
+//Was googling a for of loop and toUpperCase()
+//Found an example and it does make sense
+//the for of loop was simple saying let item of arr
+//from there, added a new variable below as let updatedArr (because I'm turning everything capital)
+//This is creating a variable called item and tying it toUpperCase
+//this is creating the variable value and tying it to updatedArr
+//Finally, logging it into the console
+//I think I'm getting confused on this one and the example I found showing a for of loop is getting lost on me. Not confident on this but did get it to work
+for (let item of arr) {
+    const value = item.toUpperCase();
+    updatedArr.push(value);
+}
+console.log(updatedArr)
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
