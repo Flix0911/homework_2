@@ -120,9 +120,84 @@ console.log(updatedArr)
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//0. console log the index of titanic
+//use the indexOf method to find the index of the element
+//let index = favMovies.indexOf('Titanic');
+//console.log(index)
+
+//1. use the .sort method thought question: What did this do to the array? did it permantely alter it?
+favMovies.sort();
+console.log(favMovies)
+//Yes it did change the array. It is now sorting by alphabetical order in terminal
+
+//2. Use the method pop
+favMovies.pop();
+console.log(favMovies)
+//Using the pop method, it removed 'Volver' from the bottom of my now sorted array in terminal
+
+//3. Push "Guardians of the Galaxy"
+favMovies.push("Guardians of the Galaxy")
+console.log(favMovies)
+//It now added "Guardians of the Galaxy" to the bottom of my array in termianl
+
+//4. Reverse the array
+favMovies.reverse()
+console.log(favMovies)
+//This reversed everything in my array in the terminal. What was at the top is now at the bottom and vica-versa 
+
+//5. Use the shift method
+favMovies.shift()
+console.log(favMovies)
+//This removed "Gurardians of the Galaxy" at the top of my array when ran in terminal
+
+//6. Unshift - what does it return?
+favMovies.unshift();
+console.log(favMovies)
+//This didn't seem to do anything. "Guardians of the Galaxy" did not return. Is this correct? Say it add new elements to the beginning but I didn't designate anything between the unshift()
+
+//7. Splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+//1st I commented out 0. above so I can run the block to figure out 'Django Unchained''s index#
+
+//let index = favMovies.indexOf('Django Unchained');
+//console.log(index)
+//This gave me an index of 14, now I can splice
+favMovies.splice(14, 1, "Avatar")
+console.log(favMovies)
+//This replaced 'Django Unchained' in the array in the termimal with 'Avatar' at the 14th index
+
+//8. slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+//9. Store the value of your slice in a variable, console.log it - Thought question: what is going on here?
+//10. Console.log your final results
+//These 3 had to be completed at the same time
+
+//I 1st had to figure out the halfway point of my array
+//Did some google and found a solution
+//called the variable halfwaypoint 
+//What I found mentioned math.floor, but I feel like for this example, this may be my only choice? These numbers are whole numbers so maybe it doesn't matter as much
+//I think this because ceil would round 9 to 10. I believe I could use Math.round but I'm not confident in that. I ran it and it gave me 9 but I feel like it's a bad idea
 
 
-////////////////////////////////
+const halfwayPoint = Math.floor(favMovies.length / 2);
+console.log(halfwayPoint)
+//found the answer is 9, time to slice my array in half
+const firstHalf = favMovies.slice(0, halfwayPoint);
+const secondHalf = favMovies.slice(-halfwayPoint); //var secondHalf is hold the 2nd half of the array
+
+console.log(firstHalf)
+console.log(secondHalf)
+
+//After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+let index = favMovies.indexOf('Fast and Furious');
+console.log(index)
+//Had to comment out the above
+//Somewhat confused by this. It returned 13 which means it is beginning at 'Toy Story' and not splitting these into 2 different arrays. Is this correct?
+
+//Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
+//Technically, we still have the same array, we only split it in 2, but it's still running sequentially. We didn't actually change anything in the end.
+//I'm pretty confused by this and not fully understanding the why of what is occuring
+
 // Where is Waldo
 ////////////////////////////////
 
