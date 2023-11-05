@@ -23,8 +23,28 @@ for (let v = 0; v < 201; v += 2) {
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
+//Write an application that logs all numbers from 1-100. q should = 1 and should be less than 101
+//want to add 1 incrementally
+//if a number is divisible by 3 log fizz instead of the number. should write an if statement where v / 3
+//Completed that part and received 34 fizz divisible by 3
+//Completed the 2nd part and recieved 21 buzz divisable by 5
+//3rd part is not complete. It is logging twice and doubling the amount of FizzBuzz I should receive
+//figured out my problem from part 3. I put || which is "or" which I should of put && which is "and"
+//unsure why console.log(q) is not having all the other numbers come out
+//committing and will come back to this
 
 
+
+for (let q = 1; q <101; q++) 
+    if (q % 3 === 0) {
+        console.log("Fizz");
+    } else if (q % 5 === 0) {
+        console.log("Buzz");
+    } else if (q % 5 && q % 3) {
+        console.log("FizzBuzz");
+    } else {
+        console.log(q);
+    }
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
