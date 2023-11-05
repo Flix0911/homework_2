@@ -12,7 +12,13 @@ for (let i = 1; i < 21; i++) {
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
+//Write a loop that will log only the even numbers 0 through 200 ~ this should only show even numbers as this loops
+//v needs to begin at 0, because that is a even number. v should be < 201 because it needs to go to 200
+//need to write if / else statement. if even, console log, if else, don't consnole log
 
+for (let v = 0; v < 201; v += 2) {
+    console.log(v);
+    }
 
 ////////////////////////////////
 // Fizz Buzz
