@@ -266,10 +266,33 @@ for (let k = 0; k <20; k++) {
 //Came to this result after a lot of searching, this problem took me a while to figure out. the k%2 was fine, the for let statement was fine
 //What I struggled with is the const randomKittyTalk and it took me a while to get to the conclusion
 
-//if the response is divisible by 2
     
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
 
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
+//Expected output:
+//=> 15
+
+//declare a function called findMedian which is using a parameter of the array above, nums
+function findMedian(nums) {
+    //had to look up sorting for median. below is sorting the array in ascending order
+    nums.sort((a, b) => a - b);
+    //from here declaring a variable middleIndex to find the middle number (there are 25 variables above) this means it won't be a while number
+    const middleIndex = Math.floor(nums.length / 2);
+
+    //if the array has an even number of elements, which it doesn't, the median should be the average of the two middle number
+    if (nums.length % 2 === 0) {
+        return (nums[middleIndex - 1] + nums[middleIndex]) / 2;
+        //if it is an odd number of elements, then the middle number of the whole thing will be returned. In this case, it is an odd number and should return the middle of all the numbers
+    } else {
+        return nums[middleIndex];
+    }
+}
+console.log(findMedian(nums))
+
+//I don't feel great about this one as well. Going to attend office hours
+//I can see where this is pulling and somewhat understand the while, but creating this completely on my own was not possible
+//I needed a lot of help and googling online to add pieces. The return lines were copied, that is my main confusion. It does make sense sort of what they're doing, but I couldn't reach that conclusion on my own
