@@ -238,8 +238,36 @@ console.log("Waldo")
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+//1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times
 
+//2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
+//1st I need to make an array of responses (used hint 1 on this)
+const kittytalk = ["...human...why are you taking pictures of me?...", "the catnip made me do it...", "...why does the red dot always get away..."]
+
+//Checked responses to confirm array is functional
+//console.log(kittenResponses)
+
+//Creat a for loop that will run 20 times
+for (let k = 0; k <20; k++) {
+    //randomize from the array and create randomKittyTalk variable to pull from later
+    const randomKittyTalk = kittytalk[Math.floor(Math.random() * kittytalk.length)]
+    //if k is divisible by 2 run randomKittyTalk
+    if (k % 2) {
+        //console.logs the response
+    console.log(randomKittyTalk);
+    } else {
+        //console.log the response if not divisible by 2
+        console.log("Love me, pet me! HSSSSSS!")
+}
+}
+
+//I don't feel great about the above. When I read your hints, I didn't use bracket notation. If I am running bracket notation, then I'm not understanding what it means
+//Came to this result after a lot of searching, this problem took me a while to figure out. the k%2 was fine, the for let statement was fine
+//What I struggled with is the const randomKittyTalk and it took me a while to get to the conclusion
+
+//if the response is divisible by 2
+    
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
