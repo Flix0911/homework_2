@@ -200,6 +200,39 @@ console.log(index)
 
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+//1. Remove Eggbert
+//1st need to figure out the index of Eggbert
+//let index2 = whereIsWaldo.indexOf('Eggbert')
+//console.log(index2)
+//Index of Eggbert is 1. I feel confident this is correct because the 0 index is what is in the added brackets []
+//Now I remove Eggbert with splice
+whereIsWaldo.splice(1, 1);
+console.log(whereIsWaldo)
+//Eggbert has been removed
+
+//2.Change "Neff" to "No One"
+const neffIndex = whereIsWaldo[2].indexOf("Neff");
+console.log(neffIndex)
+
+
+//Very interesting, Neff is -1.
+//Looked this up, said if it gives -1 as the element, it was not found. It is index 2 if you count but when trying splice and using the index 2, it doesn't give me my desired result
+
+//whereIsWaldo.splice(2 , 1, "No One");
+//console.log(whereIsWaldo)
+//The above is wrong but showing my though process. Trying something else
+
+whereIsWaldo[2][neffIndex] = "No One";
+console.log(whereIsWaldo)
+
+//Access console.log for "Waldo"
+//I believe the below is correct? Seems too simple?
+console.log("Waldo")
+//1st I need to find the index of neff. I commented out the above to find Eggbert
 
 
 ////////////////////////////////
