@@ -1,3 +1,9 @@
+//Part I: HTML & CSS
+
+//I'd rate a 5
+//Played around with the basics and I'm ready to dive in
+
+
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
