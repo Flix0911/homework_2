@@ -302,3 +302,57 @@ console.log(findMedian(nums))
 //I don't feel great about this one as well. Going to attend office hours
 //I can see where this is pulling and somewhat understand the while, but creating this completely on my own was not possible
 //I needed a lot of help and googling online to add pieces. The return lines were copied, that is my main confusion. It does make sense sort of what they're doing, but I couldn't reach that conclusion on my own
+
+////////////////////////////////
+//   Return of the closets
+////////////////////////////////
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  
+//1. Kristyn's left shoe has traveled through time and space and turned up in Thom's 
+//accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+//1st I need to find what index Kristyn's left shoe is
+
+// let kristynIndex = kristynsCloset.indexOf('left shoe');
+// console.log(kristynIndex)
+//index of 0
+
+//removed left shoe and created a variable to hold the left shoe
+const kristynsShoe = kristynsCloset.splice(0,1)
+console.log(kristynsCloset)
+console.log(kristynsShoe)
+
+//
+let thomIndex = thomsCloset.indexOf('wool mittens')
+console.log(thomIndex)
