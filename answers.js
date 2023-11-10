@@ -299,7 +299,7 @@ function findMedian(nums) {
 }
 console.log(findMedian(nums))
 
-//I don't feel great about this one as well. Going to attend office hours
+//I don't feel great about this one as well.
 //I can see where this is pulling and somewhat understand the while, but creating this completely on my own was not possible
 //I needed a lot of help and googling online to add pieces. The return lines were copied, that is my main confusion. It does make sense sort of what they're doing, but I couldn't reach that conclusion on my own
 
@@ -353,6 +353,13 @@ const kristynsShoe = kristynsCloset.splice(0,1)
 console.log(kristynsCloset)
 console.log(kristynsShoe)
 
-//
+//find where in the index Thom's accessories are
 let thomIndex = thomsCloset.indexOf('wool mittens')
 console.log(thomIndex)
+//-1
+
+//add in left shoe to to Thom's accessories
+thomsCloset.splice(-1, 1, 'left shoe')
+console.log(thomsCloset)
+
+//I don't believe this is correct. I logged the variable of left shoe into kristynsShoe but I didn't use that
