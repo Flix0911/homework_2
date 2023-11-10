@@ -363,3 +363,36 @@ thomsCloset.splice(-1, 1, 'left shoe')
 console.log(thomsCloset)
 
 //I don't believe this is correct. I logged the variable of left shoe into kristynsShoe but I didn't use that
+
+//Dress Us Up - skipped
+//1. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+//Kristyn will wear, cowboy boots, GA hoodie, and green pants
+
+//lets begin by logging the index of all of them
+
+// //cowboy boots
+// let KristynIndexBoots = kristynsCloset.indexOf('cowboy boots')
+// console.log(KristynIndexBoots)
+// //index = 0
+
+// //GA hoodie
+// let kristynIndexGa = kristynsCloset.indexOf('GA hoodie')
+// console.log(kristynIndexGa)
+// //index = 2
+
+// //green pants
+// let kristynIndexGreen = kristynsCloset.indexOf('green pants')
+// console.log(kristynIndexGreen)
+// //index = 3
+
+// //Quick note - I tried to do this in 1 line but only received the 1st value of the index, 0. Could not find a solution
+
+// //Adding them all together
+// console.log('kristynIndexGa', 'kristynIndexGreen', 'KristynIndexBoots')
+
+//I tried a lot of different ideas and got no where. I think I was tackling this incorrectly but I left the start and moved onto the next
+
+
+//Dirty Laundry
+//1.Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
