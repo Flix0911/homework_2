@@ -396,3 +396,11 @@ console.log(thomsCloset)
 
 //Dirty Laundry
 //1.Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+//for loop
+
+//loop the function
+kristynsCloset.forEach(function (item) {
+    console.log('WHIRR: Now Washing', item); //console log the "" and then the item
+})
+
