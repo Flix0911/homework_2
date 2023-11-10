@@ -349,18 +349,18 @@ const kristynsCloset = [
 //index of 0
 
 //removed left shoe and created a variable to hold the left shoe
-const kristynsShoe = kristynsCloset.splice(0,1)
-console.log(kristynsCloset)
-console.log(kristynsShoe)
+// const kristynsShoe = kristynsCloset.splice(0,1)
+// console.log(kristynsCloset)
+// console.log(kristynsShoe)
 
 //find where in the index Thom's accessories are
-let thomIndex = thomsCloset.indexOf('wool mittens')
-console.log(thomIndex)
+// let thomIndex = thomsCloset.indexOf('wool mittens')
+// console.log(thomIndex)
 //-1
 
 //add in left shoe to to Thom's accessories
-thomsCloset.splice(-1, 1, 'left shoe')
-console.log(thomsCloset)
+// thomsCloset.splice(-1, 1, 'left shoe')
+// console.log(thomsCloset)
 
 //I don't believe this is correct. I logged the variable of left shoe into kristynsShoe but I didn't use that
 
@@ -404,3 +404,7 @@ kristynsCloset.forEach(function (item) {
     console.log('WHIRR: Now Washing', item); //console log the "" and then the item
 })
 
+//I feel ok, not bad, not amazing, but ok
+//For the closet, I went from feeling really good like I was getting things to the opposite end of I'm not fully grasping this.
+//Same goes for the main assignment itself. Back and forth of postives and negative. I completed this 11/10 and was hoping the lessons from the week would help a bit
+//The classes this week certainly did but not to make me feel like "wow I got this"
